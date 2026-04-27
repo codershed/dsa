@@ -14,6 +14,7 @@ class Program
         Console.WriteLine("3 - Link List Cycle Check");
         Console.WriteLine("4 - Find Longest Sub string");
         Console.WriteLine("5 - Binary search");
+        Console.WriteLine("6 - Merge sort");
 
         process = Console.ReadLine();
 
@@ -32,6 +33,7 @@ class Program
             "3" => LinkListCycle.HasCycle(LinkListCycle.GetHead()).ToString(),
             "4" => LongestSubstring.GetSubstring("pwwkew"),
             "5" => BinarySearch.Search([-1, 0, 3, 5, 9, 12], 9).ToString(),
+            "6" => MergeSort.Sort([1,3,5],[2,4,6,9,11]).ToString(),
             _ => ""
 
         };
